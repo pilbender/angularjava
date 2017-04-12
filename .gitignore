@@ -1,0 +1,31 @@
+# Maven build binaries
+target/
+**/pom.xml.versionsBackup
+
+# Vim generated files
+*.un~
+
+# Runtime generated
+
+# Eclipse generated structures
+.settings/
+.classpath
+.project
+bin/
+
+# Intellij generated structures
+.idea
+*.iml
+
+# Mac OSX files
+.DS_Store
+
+# UI Artifacts
+
+# Internationalized CSV KeyPhrase file ( generated to share with business )
+
+# UI Testing
+
+# Jenkins generated directories
+
+# Dynamic JSPs generated during UI build
