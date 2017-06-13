@@ -11,7 +11,9 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.2.RELEASE</version>
+		<version>1.4.2.RELEASE</version>
+		<!-- An update to this version breaks the JSP directory structure: src/main/resources/META-INF/resources/WEB-INF -->
+		<!--<version>1.5.2.RELEASE</version>-->
 	</parent>
 
 	<dependencies>
@@ -23,6 +25,7 @@
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
+			<!--<scope>provided</scope>-->
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>
