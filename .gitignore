@@ -1,5 +1,5 @@
 # Maven build binaries
-target/
+/target
 **/pom.xml.versionsBackup
 
 # Vim generated files
@@ -17,15 +17,53 @@ bin/
 .idea
 *.iml
 
+# Make sure profiling artifacts are committed
+*.class
+
+# Project log files
+/logs
+
 # Mac OSX files
 .DS_Store
 
-# UI Artifacts
+# From Angular CLI output
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# Internationalized CSV KeyPhrase file ( generated to share with business )
+# compiled output
+/dist
+/tmp
+/out-tsc
 
-# UI Testing
+# dependencies
+/node_modules
+/node
 
-# Jenkins generated directories
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
 
-# Dynamic JSPs generated during UI build
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
