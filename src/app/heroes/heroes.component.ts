@@ -9,19 +9,14 @@ import { HeroService } from "../hero.service";
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[];
-  selectedHero: Hero;
 
   constructor(private heroService: HeroService) {
-    // Constructors shouldn't *do* anything beside wire simple parameters to properties.
+    // Constructors shouldn't *do* anything besides wire simple parameters to properties.
   }
 
   ngOnInit() {
     // Stuff run here will fire at an appropriate time, after things are constructed and injected.
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
   }
 
   getHeroes(): void {
