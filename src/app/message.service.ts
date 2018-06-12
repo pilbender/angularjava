@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import {Observable} from "rxjs/internal/Observable";
+import {catchError, tap} from "rxjs/operators";
+import {Hero} from "./hero";
 
 @Injectable({
   providedIn: 'root'
